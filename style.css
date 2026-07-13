@@ -83,22 +83,24 @@ nav{
 .nav-menu{
     display:flex;
     align-items:center;
+    gap:10px;
 }
 
 .nav-menu li{
     position:relative;
+    display:flex;
+    align-items:center;
 }
 
 .nav-menu li a{
-    display:block;
-    padding:18px 22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:80px;
+    padding:0 20px;
     color:#333;
     font-weight:500;
     transition:.3s;
-}
-
-.nav-menu li a:hover{
-    color:#0077b6;
 }
 
 
