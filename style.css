@@ -92,27 +92,26 @@ nav{
     align-items:center;
 }
 
-.nav-menu li a{
+.nav-menu > li > a{
+
     display:flex;
     align-items:center;
     justify-content:center;
     height:80px;
     padding:0 20px;
-    color:#333;
-    font-weight:500;
-    transition:.3s;
+
 }
 
 
-
 .dropdown-menu{
-    position:relative;
+    position:absolute;
     top:100%;
     left:0;
     background:#fff;
     min-width:220px;
     display:none;
     box-shadow:0 10px 25px rgba(0,0,0,.15);
+	z-index:999;
 }
 
 .dropdown-menu li{
@@ -132,14 +131,7 @@ nav{
     background:#0077b6;
     color:#fff;
 }
-.dropdown-menu {
-    display: none;
-	
-}
 
-.dropdown.active .dropdown-menu {
-    display: block;
-}
 
 
 .menu-btn{
