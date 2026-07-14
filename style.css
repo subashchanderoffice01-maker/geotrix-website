@@ -299,7 +299,13 @@ nav{
     text-align:justify;
     margin-bottom:20px;
 }
+.more-text{
+    display:none;
+}
 
+.more-text.show{
+    display:block;
+}
 
 /*=========================================
     BUTTON
