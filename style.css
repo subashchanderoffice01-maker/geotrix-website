@@ -306,7 +306,13 @@ nav{
 .more-text.show{
     display:block;
 }
+.more-text{
+    display:none;
+}
 
+.more-text.show{
+    display:block;
+}
 /*=========================================
     BUTTON
 =========================================*/
