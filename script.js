@@ -114,7 +114,7 @@ dots.forEach((dot, index) => {
 });
 
 setInterval(nextSlide, 5000);
-const scriptURL = "https://script.google.com/macros/s/AKfycby6-IaVxIhKOwYNzXpvB-Iv0gmcwtfJn2lHkogeCbvQDxHYKCrRkyKU1TbEpQ8ubLHV/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbwoLfVxNwfd0FHzrm6jphrkpS_rr3bfvNRd_1boXYuDUJlV1KNqvvKA5rfbh5L0W-DF/exec";
 
 document
 .getElementById("contact-form")
