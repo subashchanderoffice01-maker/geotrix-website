@@ -156,17 +156,20 @@ document
 const readMoreBtn = document.getElementById("readMoreBtn");
 const moreText = document.getElementById("more-text");
 
-readMoreBtn.addEventListener("click", function(e){
+if(readMoreBtn && moreText){
 
-    e.preventDefault();
+    readMoreBtn.addEventListener("click", function(e){
 
-    moreText.classList.toggle("show");
+        e.preventDefault();
 
-    if(moreText.classList.contains("show")){
-        readMoreBtn.innerHTML = "Read Less";
-    }
-    else{
-        readMoreBtn.innerHTML = "Read More";
-    }
+        moreText.classList.toggle("show");
 
-});
+        if(moreText.classList.contains("show")){
+            readMoreBtn.innerHTML = "Read Less";
+        }else{
+            readMoreBtn.innerHTML = "Read More";
+        }
+
+    });
+
+}
