@@ -86,10 +86,13 @@ nav{
     gap:10px;
 }
 
-.nav-menu li{
+.nav-menu > li{
     position:relative;
     display:flex;
     align-items:center;
+}
+.nav-menu > li > .dropdown-menu{
+    left:0;
 }
 
 .nav-menu > li > a{
