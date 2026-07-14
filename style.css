@@ -101,6 +101,14 @@ nav{
     padding:0 20px;
 
 }
+.nav-menu li a:link,
+.nav-menu li a:visited{
+    color:#333;
+}
+
+.nav-menu li a:hover{
+    color:#0077b6;
+}
 
 
 .dropdown-menu{
@@ -112,6 +120,10 @@ nav{
     display:none;
     box-shadow:0 10px 25px rgba(0,0,0,.15);
 	z-index:999;
+}
+.nav-menu > li:last-child .dropdown-menu{
+    left:auto;
+    right:0;
 }
 
 .dropdown-menu li{
