@@ -78,88 +78,52 @@ header .container{
 nav{
     display:flex;
     align-items:center;
+    position:relative;
 }
 
 .nav-menu{
     display:flex;
     align-items:center;
-    gap:25px;
+    gap:30px;
 }
 
 .nav-menu > li{
     position:relative;
-    display:flex;
-    align-items:center;
-}
-.nav-menu > li > .dropdown-menu{
-    left:0;
+    list-style:none;
 }
 
 .nav-menu > li > a{
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:80px;
-    padding:0 20px;
-
-}
-.nav-menu li a:link,
-.nav-menu li a:visited{
+    display:block;
+    padding:30px 0;
     color:#333;
+    font-weight:500;
 }
-
-
-
 
 .dropdown-menu{
     position:absolute;
     top:100%;
     left:0;
-    background:#fff;
-    min-width:260px;
-    padding:8px 0;
     display:none;
+    min-width:240px;
+    background:#fff;
     box-shadow:0 10px 25px rgba(0,0,0,.15);
     z-index:9999;
-}
-.nav-menu > li:last-child .dropdown-menu{
-    left:auto;
-    right:0;
-}
-
-.dropdown-menu li{
-    display:block;
-}
-
-.dropdown-menu li a{
-    display:block;
-    width:100%;
-    padding:14px 20px;
-    color:#333;
-    line-height:24px;
-    font-size:16px;
-    white-space:nowrap;
-}
-
-.dropdown-menu li a:hover{
-    background:#0077b6;
-    color:#fff;
-}
-.dropdown-menu > li{
-    display:block;
 }
 
 .dropdown:hover > .dropdown-menu{
     display:block;
 }
 
+.dropdown-menu li a{
+    display:block;
+    padding:15px 20px;
+    color:#333;
+}
+
 .dropdown-menu li a:hover{
     background:#0077b6;
     color:#fff;
 }
-
-
 
 .menu-btn{
     display:none;
