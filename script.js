@@ -153,3 +153,20 @@ document
     });
 
 });
+const readMoreBtn = document.getElementById("readMoreBtn");
+const moreText = document.getElementById("more-text");
+
+readMoreBtn.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    moreText.classList.toggle("show");
+
+    if(moreText.classList.contains("show")){
+        readMoreBtn.innerHTML = "Read Less";
+    }
+    else{
+        readMoreBtn.innerHTML = "Read More";
+    }
+
+});
