@@ -133,9 +133,17 @@ nav{
     width:100%;
 }
 
-.dropdown-menu li a{
+.dropdown-menu > li > a{
+    display:block;
+    width:100%;
     padding:14px 18px;
     color:#333;
+    line-height:1.5;
+    height:auto;
+    white-space:nowrap;
+}
+.dropdown-menu > li{
+    display:block;
 }
 
 .dropdown:hover .dropdown-menu{
