@@ -156,7 +156,7 @@ document
 const readMoreBtn = document.getElementById("readMoreBtn");
 const moreText = document.getElementById("more-text");
 
-if(readMoreBtn && moreText){
+if (readMoreBtn && moreText) {
 
     readMoreBtn.addEventListener("click", function(e){
 
@@ -165,9 +165,9 @@ if(readMoreBtn && moreText){
         moreText.classList.toggle("show");
 
         if(moreText.classList.contains("show")){
-            readMoreBtn.innerHTML = "Read Less";
+            readMoreBtn.textContent = "Read Less";
         }else{
-            readMoreBtn.innerHTML = "Read More";
+            readMoreBtn.textContent = "Read More";
         }
 
     });
